@@ -1,0 +1,42 @@
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgba(5, 5, 0, alpha);
+}
+
+#senha {
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#email {
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+#entrar {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sem_conta {
+    color: white;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    padding: 10px;
+    filter: brightness(100%);;
+}
