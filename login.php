@@ -1,11 +1,13 @@
 <?php
 require_once 'config.php';
+require_once 'mensagem.php';
 
 if (isset ($_SESSION['usuario_id'])) {
     header('Location: index.php');
     exit;
-}
+
     
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,9 +16,13 @@ if (isset ($_SESSION['usuario_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistema Financeiro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Login - Sistema Financeiro</h1>
+
+    <?php exibir_mensagem() ?>;
+
     <form action="autenticar.php" method="post">
         <div>
             <label for="email">E-mail:</label>
@@ -33,6 +39,7 @@ if (isset ($_SESSION['usuario_id'])) {
 <form>
 
 <p> Não tem conta? <a href="registro.php">Cadastre-se aqui.</a><p>
+
 
 </body>
 </html>
