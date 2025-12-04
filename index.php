@@ -2,11 +2,13 @@
  require_once 'config.php';
 
  // Verificar se o usuário está logado
-
  if (!isset ($_SESSION['usuario_id'])) {
     header('Location: login.php');
     exit;
 }
+
+$usuario_id = $_SESSION ['usuario_id'];
+$usuario_nome = $_SESSION['usuario_nome'];
 ?>
 
 <!DOCTYPE html>
@@ -17,5 +19,9 @@
 </head>
 <body>
     <h1>Sistema Financeiro</h1>
+
+    <div>
+        <p>Bem-vindo, <strong> <?= $usuario_nome?> </strong></p>
+    </div>
 </body>
 </html>
